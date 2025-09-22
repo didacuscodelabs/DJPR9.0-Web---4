@@ -1,0 +1,1526 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DJPR9.0 — Marketing Digital para Profesionales de la Salud, Fitness & Wellness</title>
+  <meta name="description" content="Ayudo a coaches, nutricionistas, terapeutas y profesionales independientes a ganar visibilidad, autoridad y clientes online mediante estrategias de contenido SEO, inbound marketing y storytelling." />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚕</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      /* Colores profesionales médicos - Paleta refinada */
+      --bg-primary: #0a0e1a;
+      --bg-secondary: #0f1529;
+      --bg-tertiary: #1a2332;
+      --card-bg: linear-gradient(135deg, rgba(26, 35, 50, 0.6), rgba(15, 21, 41, 0.8));
+      --card-border: rgba(59, 130, 246, 0.1);
+      --glass: rgba(59, 130, 246, 0.03);
+      
+      /* Textos optimizados para conversión */
+      --text-primary: #ffffff;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --text-accent: #3b82f6;
+      
+      /* Sistema de colores estratégico */
+      --primary: #3b82f6;      /* Azul confianza médica */
+      --secondary: #06b6d4;    /* Cyan profesional */
+      --accent: #8b5cf6;       /* Púrpura premium */
+      --success: #10b981;      /* Verde resultados */
+      --warning: #f59e0b;      /* Naranja urgencia */
+      --danger: #ef4444;       /* Rojo advertencia */
+      
+      /* Gradientes persuasivos */
+      --gradient-primary: linear-gradient(135deg, #3b82f6, #06b6d4);
+      --gradient-premium: linear-gradient(135deg, #8b5cf6, #3b82f6);
+      --gradient-success: linear-gradient(135deg, #10b981, #06b6d4);
+      
+      /* Sombras y efectos */
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+      --shadow-glow: 0 0 30px rgba(59, 130, 246, 0.3);
+      
+      /* Espaciado y tipografía */
+      --radius: 16px;
+      --max-width: 1400px;
+      --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    
+    * { 
+      box-sizing: border-box; 
+      margin: 0; 
+      padding: 0; 
+    }
+    
+    html, body {
+      font-family: var(--font-family);
+      background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-tertiary) 100%);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+    }
+    
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    
+    /* Header minimalista y profesional */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(10, 14, 26, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--card-border);
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+    
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    
+    /* Logo profesional */
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    .brand-text {
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: var(--gradient-primary);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.02em;
+    }
+    
+    nav {
+      display: flex;
+      gap: 0.5rem;
+    }
+    
+    .nav-link {
+      padding: 0.75rem 1.25rem;
+      border-radius: 10px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    .nav-link:hover, .nav-link.active {
+      color: var(--primary);
+      background: rgba(59, 130, 246, 0.1);
+    }
+    
+    .nav-link.cta {
+      background: var(--gradient-primary);
+      color: white;
+      font-weight: 600;
+    }
+    
+    .nav-link.cta:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-glow);
+    }
+    
+    /* Hero section optimizado para conversión */
+    .hero {
+      padding: 8rem 0 6rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(59, 130, 246, 0.1), transparent);
+      pointer-events: none;
+    }
+    
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+      position: relative;
+      text-align: center;
+    }
+    
+    /* Copy persuasivo */
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 50px;
+      color: var(--success);
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+    
+    .hero-badge::before {
+      content: '◉';
+      font-weight: 700;
+    }
+    
+    .hero-title {
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .hero-subtitle {
+      font-size: 1.3rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1.25rem 2.5rem;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .btn-primary {
+      background: var(--gradient-primary);
+      color: white;
+      box-shadow: 0 10px 25px rgba(59, 130, 246, 0.25);
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(59, 130, 246, 0.35);
+    }
+    
+    .btn-secondary {
+      background: transparent;
+      color: var(--text-primary);
+      border: 2px solid var(--card-border);
+    }
+    
+    .btn-secondary:hover {
+      background: rgba(59, 130, 246, 0.1);
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+    
+    /* Secciones principales */
+    .section {
+      padding: 6rem 0;
+      position: relative;
+    }
+    
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    
+    .section-badge {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: rgba(139, 92, 246, 0.1);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 50px;
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    
+    .section-title {
+      font-size: 2.75rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      background: var(--gradient-primary);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    
+    /* Problem section */
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .problem-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(217, 119, 6, 0.2);
+      border-radius: var(--radius);
+      padding: 2rem;
+      backdrop-filter: blur(20px);
+      position: relative;
+    }
+    
+    .problem-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--warning);
+      border-radius: var(--radius) var(--radius) 0 0;
+    }
+    
+    .problem-quote {
+      font-style: italic;
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    
+    .problem-author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .author-avatar {
+      width: 50px;
+      height: 50px;
+      background: var(--gradient-primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+    }
+    
+    .author-info h4 {
+      color: var(--text-primary);
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    
+    .author-info p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    
+    /* Grid de servicios optimizado para conversión */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .service-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: all 0.4s ease;
+      position: relative;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl), 0 0 40px rgba(59, 130, 246, 0.15);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    
+    .service-header {
+      padding: 2rem 2rem 1rem;
+      position: relative;
+    }
+    
+    .service-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--gradient-success);
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+    
+    .service-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+    
+    .service-price {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .price-main {
+      font-size: 2.25rem;
+      font-weight: 800;
+      background: var(--gradient-primary);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .price-period {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    
+    .service-description {
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    
+    .service-body {
+      padding: 0 2rem 2rem;
+    }
+    
+    .service-features {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+    
+    .service-features li {
+      padding: 0.6rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+    
+    .service-features li::before {
+      content: '◉';
+      color: var(--success);
+      font-weight: 700;
+      width: 16px;
+      text-align: center;
+    }
+    
+    .service-cta {
+      width: 100%;
+      justify-content: center;
+      background: var(--gradient-primary);
+      color: white;
+      font-weight: 600;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .service-cta::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
+    }
+    
+    .service-cta:hover::before {
+      left: 100%;
+    }
+    
+    /* Card destacada */
+    .service-card.featured {
+      border-color: var(--primary);
+      position: relative;
+      transform: scale(1.05);
+    }
+    
+    .service-card.featured::before {
+      content: 'MÁS POPULAR';
+      position: absolute;
+      top: -1px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gradient-primary);
+      color: white;
+      padding: 0.5rem 2rem;
+      border-radius: 0 0 20px 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+    
+    /* Testimoniales */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .testimonial {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      backdrop-filter: blur(20px);
+      position: relative;
+    }
+    
+    .testimonial::before {
+      content: '"';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      font-size: 4rem;
+      color: var(--primary);
+      line-height: 1;
+    }
+    
+    .testimonial-text {
+      color: var(--text-secondary);
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      padding-top: 1rem;
+    }
+    
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    /* Process flow */
+    .process-flow {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .process-step {
+      text-align: center;
+      padding: 2rem;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      backdrop-filter: blur(20px);
+      position: relative;
+    }
+    
+    .process-number {
+      width: 80px;
+      height: 80px;
+      background: var(--gradient-primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      color: white;
+      font-weight: 800;
+      font-size: 1.5rem;
+    }
+    
+    .process-step h4 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+    
+    .process-step p {
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    
+    /* About section */
+    .about-content {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 4rem;
+      align-items: start;
+      margin-top: 3rem;
+    }
+    
+    .about-profile {
+      text-align: center;
+    }
+    
+    .profile-image {
+      width: 250px;
+      height: 250px;
+      background: var(--gradient-primary);
+      border-radius: 50%;
+      margin: 0 auto 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 3.5rem;
+      font-weight: 800;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .certifications {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    
+    .cert-badge {
+      background: rgba(59, 130, 246, 0.1);
+      color: var(--primary);
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      border: 1px solid rgba(59, 130, 246, 0.2);
+    }
+    
+    .about-text {
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+    
+    .about-text p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .highlight-box {
+      background: rgba(59, 130, 246, 0.05);
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      border-left: 4px solid var(--primary);
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+    
+    .highlight-box p {
+      color: var(--primary);
+      font-style: italic;
+      font-size: 1.1rem;
+      margin: 0;
+    }
+    
+    /* Contact section */
+    .contact-section {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 4rem;
+      margin: 4rem 0;
+      backdrop-filter: blur(20px);
+      position: relative;
+    }
+    
+    .contact-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-primary);
+      border-radius: var(--radius) var(--radius) 0 0;
+    }
+    
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+    
+    .contact-form .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .contact-form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid var(--card-border);
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 10px;
+      color: var(--text-primary);
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+    
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+      background: rgba(59, 130, 246, 0.03);
+    }
+    
+    textarea.form-control {
+      min-height: 120px;
+      resize: vertical;
+    }
+    
+    .contact-info h3 {
+      color: var(--primary);
+      margin-bottom: 2rem;
+      font-size: 1.75rem;
+    }
+    
+    .contact-methods {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .contact-method {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.25rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .contact-method:hover {
+      background: rgba(59, 130, 246, 0.05);
+      border-color: rgba(59, 130, 246, 0.2);
+      transform: translateX(5px);
+    }
+    
+    .contact-icon {
+      width: 45px;
+      height: 45px;
+      background: var(--gradient-primary);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--bg-tertiary);
+      border-top: 1px solid var(--card-border);
+      padding: 3rem 0 2rem;
+      margin-top: 6rem;
+    }
+    
+    .footer-content {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 2rem;
+    }
+    
+    .footer-brand h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: var(--gradient-primary);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+    
+    .footer-brand p {
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    
+    .footer-links h4 {
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    
+    .footer-links ul {
+      list-style: none;
+    }
+    
+    .footer-links li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+    
+    .footer-bottom {
+      padding-top: 2rem;
+      border-top: 1px solid var(--card-border);
+      text-align: center;
+      color: var(--text-muted);
+    }
+    
+    /* Success message */
+    .success-message {
+      display: none;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: var(--success);
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 1rem;
+      }
+      
+      .header-content {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      nav {
+        width: 100%;
+        justify-content: center;
+      }
+      
+      .hero {
+        padding: 6rem 0 4rem;
+      }
+      
+      .hero-title {
+        font-size: 2.5rem;
+      }
+      
+      .hero-cta {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .services-grid,
+      .problem-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .service-card.featured {
+        transform: none;
+      }
+      
+      .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+      }
+      
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      
+      .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      
+      .section-title {
+        font-size: 2rem;
+      }
+      
+      .contact-section {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <div class="logo-container">
+        <div class="brand-text">DJPR9.0</div>
+      </div>
+      <nav>
+        <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#contacto" class="nav-link cta">Consulta Gratuita</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          Especialistas en marketing digital para profesionales de salud
+        </div>
+        
+        <h1 class="hero-title">
+          Marketing Digital para Profesionales de la Salud, Fitness & Wellness
+        </h1>
+        
+        <p class="hero-subtitle">
+          Ayudo a coaches, nutricionistas, terapeutas y profesionales independientes de la salud, el fitness y el bienestar a ganar <strong>visibilidad, autoridad y clientes online</strong> mediante estrategias de contenido SEO, inbound marketing y storytelling.
+        </p>
+        
+        <div class="hero-cta">
+          <a href="#contacto" class="btn btn-primary">
+            ◉ Auditoría Gratuita (30 min)
+          </a>
+          <a href="#casos-exito" class="btn btn-secondary">
+            Ver Casos de Éxito
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problema -->
+    <section class="section">
+      <div class="section-header">
+        <span class="section-badge">El problema real</span>
+        <h2 class="section-title">¿Te suena familiar?</h2>
+      </div>
+      
+      <div class="problem-grid">
+        <div class="problem-card">
+          <p class="problem-quote">
+            "Tengo Instagram y Facebook, pero no me llegan pacientes nuevos. Solo veo las mismas caras de siempre..."
+          </p>
+          <div class="problem-author">
+            <div class="author-avatar">M</div>
+            <div class="author-info">
+              <h4>Dra. María</h4>
+              <p>Psicóloga - Antes de DJPR</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="problem-card">
+          <p class="problem-quote">
+            "Mi competencia siempre aparece en Google y yo no. Pierdo pacientes porque no me encuentran online."
+          </p>
+          <div class="problem-author">
+            <div class="author-avatar">C</div>
+            <div class="author-info">
+              <h4>Dr. Carlos</h4>
+              <p>Odontólogo - Antes de DJPR</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="problem-card">
+          <p class="problem-quote">
+            "Publico contenido pero nadie interactúa. Siento que hablo a la pared y pierdo tiempo valioso."
+          </p>
+          <div class="problem-author">
+            <div class="author-avatar">A</div>
+            <div class="author-info">
+              <h4>Ana</h4>
+              <p>Nutricionista - Antes de DJPR</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios principales -->
+    <section id="servicios" class="section">
+      <div class="section-header">
+        <span class="section-badge">Soluciones que funcionan</span>
+        <h2 class="section-title">Servicios Diseñados para Profesionales de Salud</h2>
+        <p class="section-subtitle">
+          No vendemos humo. Cada servicio está pensado para generar resultados medibles en tu consulta.
+        </p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-header">
+            <h3 class="service-title">Auditoría SEO Express</h3>
+            <div class="service-price">
+              <span class="price-main">$65</span>
+              <span class="price-period">una vez</span>
+            </div>
+            <p class="service-description">
+              Descubre por qué tus pacientes ideales no te encuentran en Google y cómo solucionarlo.
+            </p>
+          </div>
+          <div class="service-body">
+            <ul class="service-features">
+              <li>Informe PDF de 5-8 páginas con capturas y ejemplos</li>
+              <li>Correcciones priorizadas (urgentes/medias/largo plazo)</li>
+              <li>Mini-investigación de 3-8 palabras clave prioritarias</li>
+              <li>Plan de acción claro y secuenciado</li>
+              <li>Checklist ejecutable con prioridades 1-5</li>
+              <li>Entrega en 3-5 días laborables</li>
+            </ul>
+            <a href="#contacto" class="btn service-cta">
+              Solicitar Auditoría
+            </a>
+          </div>
+        </div>
+
+        <div class="service-card featured">
+          <div class="service-header">
+            <h3 class="service-title">Lead Magnet + Landing</h3>
+            <div class="service-price">
+              <span class="price-main">$160</span>
+              <span class="price-period">completo</span>
+            </div>
+            <p class="service-description">
+              Sistema automático que convierte visitantes en pacientes potenciales 24/7.
+            </p>
+          </div>
+          <div class="service-body">
+            <ul class="service-features">
+              <li>PDF lead magnet diseñado y redactado</li>
+              <li>Landing page lista para publicar (Carrd/HTML)</li>
+              <li>Secuencia de 3 emails de bienvenida automatizados</li>
+              <li>Integración con email marketing configurada</li>
+              <li>Formulario optimizado para conversión</li>
+              <li>Entrega en 5-8 días laborables</li>
+            </ul>
+            <a href="#contacto" class="btn service-cta">
+              Crear Mi Sistema
+            </a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-header">
+            <h3 class="service-title">Newsletter & Plan de Contenido</h3>
+            <div class="service-price">
+              <span class="price-main">$120</span>
+              <span class="price-period">/mes</span>
+            </div>
+            <p class="service-description">
+              Mantén a tus pacientes conectados con contenido educativo profesional.
+            </p>
+          </div>
+          <div class="service-body">
+            <ul class="service-features">
+              <li>2 newsletters mensuales redactadas y diseñadas</li>
+              <li>Plan de contenido estratégico 12 semanas</li>
+              <li>12-24 ideas desarrolladas con copy y brief creativo</li>
+              <li>Calendario editorial en Excel/CSV</li>
+              <li>Plantillas editables en Canva</li>
+              <li>Informe mensual de métricas básico</li>
+            </ul>
+            <a href="#contacto" class="btn service-cta">
+              Empezar Plan
+            </a>
+          </div>
+        </div>
+        
+        <!-- Paquetes -->
+        <div class="service-card">
+          <div class="service-header">
+            <h3 class="service-title">Reactivación Digital</h3>
+            <div class="service-price">
+              <span class="price-main">€280</span>
+              <span class="price-period">completo</span>
+            </div>
+            <p class="service-description">
+              Ideal para profesionales que quieren ordenar y mejorar su presencia social con resultados rápidos.
+            </p>
+          </div>
+          <div class="service-body">
+            <ul class="service-features">
+              <li>Auditoría completa Instagram + Facebook</li>
+              <li>Optimización de perfiles y highlights</li>
+              <li>24 piezas de contenido listos (12 semanas)</li>
+              <li>Cronograma de publicación detallado</li>
+              <li>Configuración WhatsApp Business</li>
+              <li>Videollamada de seguimiento (30-45 min)</li>
+            </ul>
+            <a href="#contacto" class="btn service-cta">
+              Reactivar Mi Presencia
+            </a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-header">
+            <h3 class="service-title">Presencia Pro</h3>
+            <div class="service-price">
+              <span class="price-main">€580</span>
+              <span class="price-period">completo</span>
+            </div>
+            <p class="service-description">
+              Todo lo anterior + identidad visual profesional y página web funcional.
+            </p>
+          </div>
+          <div class="service-body">
+            <ul class="service-features">
+              <li>Todo del paquete Reactivación Digital</li>
+              <li>Logo profesional + paleta de colores</li>
+              <li>6 plantillas de stories reutilizables</li>
+              <li>Landing page one-page profesional</li>
+              <li>Google Business Profile optimizado</li>
+              <li>Kit de marca completo</li>
+            </ul>
+            <a href="#contacto" class="btn service-cta">
+              Crear Mi Presencia Pro
+            </a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-header">
+            <h3 class="service-title">Negocio Digital</h3>
+            <div class="service-price">
+              <span class="price-main">€980</span>
+              <span class="price-period">completo</span>
+            </div>
+            <p class="service-description">
+              Solución completa: web profesional + automatizaciones + contenido para 6 meses.
+            </p>
+          </div>
+          <div class="service-body">
+            <ul class="service-features">
+              <li>Todo del paquete Presencia Pro</li>
+              <li>Website WordPress (5 páginas + blog)</li>
+              <li>Branding completo profesional</li>
+              <li>50 posts + 20 stories (6 meses de contenido)</li>
+              <li>5 emails automatizados de bienvenida</li>
+              <li>Scripts para respuestas frecuentes</li>
+            </ul>
+            <a href="#contacto" class="btn service-cta">
+              Transformar Mi Negocio
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Casos de éxito -->
+    <section id="casos-exito" class="section">
+      <div class="section-header">
+        <span class="section-badge">Casos de éxito</span>
+        <h2 class="section-title">Resultados Reales de Profesionales Reales</h2>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <p class="testimonial-text">
+            En 2 meses pasé de 3-4 pacientes por semana a tener lista de espera. La auditoría SEO fue clave para aparecer cuando buscan 'psicólogo ansiedad' en mi ciudad.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">L</div>
+            <div class="author-info">
+              <h4>Dra. Laura Mendez</h4>
+              <p>Psicóloga Clínica - +180% pacientes</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial">
+          <p class="testimonial-text">
+            Mi consulta dental estaba vacía los martes y miércoles. Ahora tengo que rechazar pacientes. El lead magnet '5 señales de que necesitas limpieza' fue genial.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">R</div>
+            <div class="author-info">
+              <h4>Dr. Roberto Silva</h4>
+              <p>Odontólogo - +250% consultas</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial">
+          <p class="testimonial-text">
+            Antes perdía 2 horas diarias en redes sin resultados. Ahora con el plan de contenido invierto 20 minutos y genero más consultas nutricionales que nunca.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">S</div>
+            <div class="author-info">
+              <h4>Sofía Ruiz</h4>
+              <p>Nutricionista - +320% eficiencia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metodología de trabajo -->
+    <section class="section">
+      <div class="section-header">
+        <span class="section-badge">Metodología probada</span>
+        <h2 class="section-title">Cómo Trabajamos</h2>
+        <p class="section-subtitle">Proceso simple, resultados complejos</p>
+      </div>
+      
+      <div class="process-flow">
+        <div class="process-step">
+          <div class="process-number">1</div>
+          <h4>Auditoría & Diagnóstico</h4>
+          <p>Analizamos tu situación actual y definimos objetivos claros. Solo toma 30 minutos de tu tiempo.</p>
+        </div>
+        
+        <div class="process-step">
+          <div class="process-number">2</div>
+          <h4>Estrategia & Planificación</h4>
+          <p>Diseñamos la estrategia personalizada basada en tu especialidad y mercado objetivo.</p>
+        </div>
+        
+        <div class="process-step">
+          <div class="process-number">3</div>
+          <h4>Desarrollo & Creación</h4>
+          <p>Nuestro equipo trabaja en tu proyecto mientras tú atiendes pacientes. Sin interrupciones.</p>
+        </div>
+        
+        <div class="process-step">
+          <div class="process-number">4</div>
+          <h4>Entrega & Capacitación</h4>
+          <p>Recibes todo listo para usar + tutorial personalizado para que implementes sin complicaciones.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Historia personal -->
+    <section id="sobre-mi" class="section">
+      <div class="section-header">
+        <span class="section-badge">La historia detrás de DJPR9.0</span>
+        <h2 class="section-title">¿Por qué entiendo tu negocio como nadie más?</h2>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-profile">
+          <div class="profile-image">
+            DJ
+          </div>
+          <h3 style="color: var(--primary); margin-bottom: 0.5rem;">Diego José Palencia Robles</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">Master en Traffic Marketing | Certificación NASM | Doctorando en Administración para Alto Desempeño</p>
+          <div class="certifications">
+            <span class="cert-badge">Traffic Marketing</span>
+            <span class="cert-badge">NASM Certified</span>
+            <span class="cert-badge">Fitness Expert</span>
+          </div>
+        </div>
+        
+        <div class="about-text">
+          <div class="highlight-box">
+            <p>"El momento más oscuro es justo antes del amanecer"</p>
+          </div>
+          
+          <p>
+            Mi transformación comenzó frente a un espejo. No me gustaba quien veía reflejado. Ese momento de confrontación brutal conmigo mismo fue el catalizador de todo lo que vino después.
+          </p>
+          
+          <p>
+            Inscribirme en el gimnasio fue solo el primer paso. Lo que realmente cambió mi vida fue entender que la transformación física es, en realidad, un proceso de reconexión contigo mismo.
+          </p>
+          
+          <div class="highlight-box">
+            <p>"No eres lo que logras, eres lo que superas"</p>
+          </div>
+          
+          <p>
+            Dediqué años estudiando biomecánica, nutrición, psicología del cambio. Me certifiqué como <strong style="color: var(--success);">NASM</strong> porque creí que mi vocación estaba en el fitness. Pero algo más profundo se estaba gestando.
+          </p>
+          
+          <p>
+            Trabajando con personas en el mundo del fitness y bienestar, observé un patrón que me perturbaba: profesionales extraordinarios—entrenadores con conocimientos profundos, nutricionistas con resultados increíbles, terapeutas con dones únicos—que luchaban por conectar con las personas que más necesitaban su ayuda.
+          </p>
+          
+          <div class="highlight-box">
+            <p>"Tu mensaje no llega a quien más lo necesita si no sabes cómo comunicarlo"</p>
+          </div>
+          
+          <p>
+            Ahí comprendí mi verdadero propósito. Mi experiencia en fitness no era el destino final, sino la preparación para algo más significativo. Decidí especializarme en marketing digital, completé mi <strong style="color: var(--primary);">Master en Traffic Marketing</strong>, y actualmente curso mi <strong>Doctorado en Administración para Alto Desempeño</strong>.
+          </p>
+          
+          <p>
+            Esta combinación única me permite entender tanto la psicología del cambio personal como la mecánica de la comunicación digital efectiva.
+          </p>
+          
+          <div class="highlight-box">
+            <p><strong>¿Por qué trabajo exclusivamente con profesionales de la salud, fitness y wellness?</strong><br><br>
+            Porque entiendo desde adentro los desafíos únicos de tu industria, la mentalidad de tus clientes, y sobre todo, la responsabilidad que conlleva transformar vidas.</p>
+          </div>
+          
+          <p>
+            Cuando un cliente abandona un plan nutricional, sé exactamente por qué sucede. Cuando un paciente no regresa a consulta, comprendo las emociones involucradas. Cuando un profesional se siente frustrado porque su conocimiento no se traduce en clientes, he estado exactamente ahí.
+          </p>
+          
+          <div class="highlight-box">
+            <p>"No basta con ser bueno en lo que haces. Tienes que ser encontrado por quien necesita lo que ofreces"</p>
+          </div>
+          
+          <p>
+            Mi enfoque combina marketing estratégico con ética profesional. No se trata de vender más, sino de conectar mejor. De construir confianza auténtica. De posicionar tu expertise donde realmente puede transformar vidas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact-section">
+      <div class="section-header" style="margin-bottom: 3rem;">
+        <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem; background: var(--gradient-primary); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+          ¿Listo para Llenar Tu Consulta?
+        </h2>
+        <p style="text-align: center; font-size: 1.2rem; color: var(--text-secondary);">
+          Agenda tu consulta gratuita de 30 minutos. Sin compromisos, sin presión de ventas.
+        </p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" class="form-control" required placeholder="Dr. Juan Pérez">
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email profesional *</label>
+              <input type="email" id="email" name="email" class="form-control" required placeholder="contacto@djpr90.com">
+            </div>
+            
+            <div class="form-group">
+              <label for="telefono">WhatsApp</label>
+              <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="+1 555 000 0000">
+            </div>
+            
+            <div class="form-group">
+              <label for="especialidad">Especialidad *</label>
+              <select id="especialidad" name="especialidad" class="form-control" required>
+                <option value="">Selecciona tu especialidad</option>
+                <option>Psicología / Terapia</option>
+                <option>Medicina General</option>
+                <option>Odontología</option>
+                <option>Fisioterapia</option>
+                <option>Nutrición</option>
+                <option>Dermatología</option>
+                <option>Ginecología</option>
+                <option>Pediatría</option>
+                <option>Entrenador Personal/Fitness</option>
+                <option>Coaching</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="situacion">¿Cuál es tu mayor desafío actual?</label>
+              <textarea id="situacion" name="situacion" class="form-control" placeholder="Ej: No me llegan pacientes nuevos, mi competencia aparece en Google y yo no, pierdo tiempo en redes sociales sin resultados..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 1.5rem;">
+              ⬢ Agendar Mi Consulta Gratuita
+            </button>
+            
+            <p style="font-size: 0.9rem; color: var(--text-muted); text-align: center; margin-top: 1rem;">
+              ∿ Respuesta garantizada en 24 horas • ◊ Información confidencial • ◉ Sin spam
+            </p>
+            
+            <div id="successMessage" class="success-message">
+              ¡Perfecto! Hemos recibido tu solicitud. Te contactaremos en las próximas 24 horas para agendar tu consulta gratuita de 30 minutos.
+            </div>
+          </form>
+        </div>
+        
+        <div class="contact-info">
+          <h3>Formas de Contacto</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+            Elige el método que prefieras. Respuesta profesional garantizada.
+          </p>
+          
+          <div class="contact-methods">
+            <div class="contact-method" onclick="openWhatsApp()">
+              <div class="contact-icon">☊</div>
+              <div>
+                <strong>WhatsApp Directo</strong>
+                <p style="margin: 0; color: var(--text-muted);">Respuesta inmediata • 9AM-6PM GMT-6</p>
+              </div>
+            </div>
+            
+            <div class="contact-method" onclick="sendEmail()">
+              <div class="contact-icon">☌</div>
+              <div>
+                <strong>Email Profesional</strong>
+                <p style="margin: 0; color: var(--text-muted);">contacto@djpr90.com • 24h máximo</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-icon">⚊</div>
+              <div>
+                <strong>Consulta Virtual</strong>
+                <p style="margin: 0; color: var(--text-muted);">Zoom/Meet • 30 min gratuitos</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-icon">⚋</div>
+              <div>
+                <strong>100% Confidencial</strong>
+                <p style="margin: 0; color: var(--text-muted);">RGPD compliant • Datos seguros</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>DJPR9.0</h3>
+          <p>Especialistas en marketing digital para profesionales de salud desde 2023. Ayudo a coaches, nutricionistas, terapeutas y profesionales independientes de la salud, el fitness y el bienestar a ganar <strong>visibilidad, autoridad y clientes online</strong>.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#servicios">Auditoría SEO</a></li>
+            <li><a href="#servicios">Lead Magnets</a></li>
+            <li><a href="#servicios">Newsletters</a></li>
+            <li><a href="#servicios">Paquetes</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Conecta</h4>
+          <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#casos-exito">Casos de Estudio</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 DJPR9.0. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Show success message
+      document.getElementById('successMessage').style.display = 'block';
+      
+      // Reset form
+      this.reset();
+      
+      // Scroll to success message
+      document.getElementById('successMessage').scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'center' 
+      });
+    });
+    
+    // WhatsApp function
+    function openWhatsApp() {
+      window.open('https://wa.me/1234567890?text=Hola, me interesa una consulta gratuita sobre marketing digital para mi práctica médica.', '_blank');
+    }
+    
+    // Email function
+    function sendEmail() {
+      window.location.href = 'mailto:contacto@djpr90.com?subject=Consulta sobre Marketing Digital&body=Hola Diego, me interesa conocer más sobre tus servicios de marketing digital para profesionales de la salud.';
+    }
+    
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
